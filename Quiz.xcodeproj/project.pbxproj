@@ -12,6 +12,9 @@
 		ADAC8EC6200149F60094106B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC4200149F60094106B /* Main.storyboard */; };
 		ADAC8EC8200149F60094106B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC7200149F60094106B /* Assets.xcassets */; };
 		ADAC8ECB200149F60094106B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC9200149F60094106B /* LaunchScreen.storyboard */; };
+		ADAC8ED320014DF40094106B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8ED220014DF40094106B /* Answer.swift */; };
+		ADAC8ED520014ED80094106B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8ED420014ED80094106B /* Question.swift */; };
+		ADAC8ED7200153250094106B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8ED6200153250094106B /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		ADAC8EC7200149F60094106B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAC8ECA200149F60094106B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADAC8ECC200149F60094106B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAC8ED220014DF40094106B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		ADAC8ED420014ED80094106B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		ADAC8ED6200153250094106B /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		ADAC8EBF200149F60094106B /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				ADAC8ED220014DF40094106B /* Answer.swift */,
+				ADAC8ED420014ED80094106B /* Question.swift */,
+				ADAC8ED6200153250094106B /* Quiz.swift */,
 				ADAC8EC0200149F60094106B /* AppDelegate.swift */,
 				ADAC8EC2200149F60094106B /* ViewController.swift */,
 				ADAC8EC4200149F60094106B /* Main.storyboard */,
@@ -136,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAC8ED320014DF40094106B /* Answer.swift in Sources */,
+				ADAC8ED7200153250094106B /* Quiz.swift in Sources */,
+				ADAC8ED520014ED80094106B /* Question.swift in Sources */,
 				ADAC8EC3200149F60094106B /* ViewController.swift in Sources */,
 				ADAC8EC1200149F60094106B /* AppDelegate.swift in Sources */,
 			);
