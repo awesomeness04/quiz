@@ -10,6 +10,7 @@ import Foundation
 
 class Quiz {
     
+  
     var score: Int
     let questions: [Question]
     var currentQuestionIndex: Int
@@ -26,5 +27,4 @@ class Quiz {
         self.questions = questions
         currentQuestionIndex = 0
     }
-    
 }

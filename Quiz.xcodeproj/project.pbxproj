@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		ADAC8EC1200149F60094106B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8EC0200149F60094106B /* AppDelegate.swift */; };
 		ADAC8EC3200149F60094106B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8EC2200149F60094106B /* ViewController.swift */; };
-		ADAC8EC6200149F60094106B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC4200149F60094106B /* Main.storyboard */; };
+		ADAC8EC6200149F60094106B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC4200149F60094106B /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		ADAC8EC8200149F60094106B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC7200149F60094106B /* Assets.xcassets */; };
 		ADAC8ECB200149F60094106B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC9200149F60094106B /* LaunchScreen.storyboard */; };
 		ADAC8ED320014DF40094106B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8ED220014DF40094106B /* Answer.swift */; };
@@ -99,6 +99,12 @@
 		ADAC8EB5200149F60094106B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+					2,
+					3,
+				);
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Nick Inc";
