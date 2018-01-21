@@ -27,4 +27,18 @@ class Quiz {
         self.questions = questions
         currentQuestionIndex = 0
     }
+    
+    func increaseScore() {
+        score += 1
+    }
+    
+    func next() {
+        currentQuestionIndex += 1
+    }
+    
+    func reset() {
+        currentQuestionIndex = 0
+        score = 0
+    }
+    
 }

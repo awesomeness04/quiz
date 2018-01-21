@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ADAC8EC1200149F60094106B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8EC0200149F60094106B /* AppDelegate.swift */; };
-		ADAC8EC3200149F60094106B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8EC2200149F60094106B /* ViewController.swift */; };
+		ADAC8EC3200149F60094106B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAC8EC2200149F60094106B /* QuizViewController.swift */; };
 		ADAC8EC6200149F60094106B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC4200149F60094106B /* Main.storyboard */; settings = {ASSET_TAGS = (0, ); }; };
 		ADAC8EC8200149F60094106B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC7200149F60094106B /* Assets.xcassets */; };
 		ADAC8ECB200149F60094106B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC8EC9200149F60094106B /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		ADAC8EBD200149F60094106B /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAC8EC0200149F60094106B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADAC8EC2200149F60094106B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADAC8EC2200149F60094106B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		ADAC8EC5200149F60094106B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADAC8EC7200149F60094106B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAC8ECA200149F60094106B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				ADAC8ED420014ED80094106B /* Question.swift */,
 				ADAC8ED6200153250094106B /* Quiz.swift */,
 				ADAC8EC0200149F60094106B /* AppDelegate.swift */,
-				ADAC8EC2200149F60094106B /* ViewController.swift */,
+				ADAC8EC2200149F60094106B /* QuizViewController.swift */,
 				ADAC8EC4200149F60094106B /* Main.storyboard */,
 				ADAC8EC7200149F60094106B /* Assets.xcassets */,
 				ADAC8EC9200149F60094106B /* LaunchScreen.storyboard */,
@@ -154,7 +154,7 @@
 				ADAC8ED320014DF40094106B /* Answer.swift in Sources */,
 				ADAC8ED7200153250094106B /* Quiz.swift in Sources */,
 				ADAC8ED520014ED80094106B /* Question.swift in Sources */,
-				ADAC8EC3200149F60094106B /* ViewController.swift in Sources */,
+				ADAC8EC3200149F60094106B /* QuizViewController.swift in Sources */,
 				ADAC8EC1200149F60094106B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,9 +293,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYP4XQG323;
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Quiz;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NickQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,9 +308,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYP4XQG323;
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Quiz;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.NickQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
