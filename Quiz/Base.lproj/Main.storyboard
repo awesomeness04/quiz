@@ -56,8 +56,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXU-2j-IMq" userLabel="Question Label">
-                                <rect key="frame" x="139" y="94" width="42" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXU-2j-IMq" userLabel="Question Label">
+                                <rect key="frame" x="32" y="94" width="256" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,11 +99,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iRU-M2-Lyb" firstAttribute="top" secondItem="SXU-2j-IMq" secondAttribute="bottom" constant="109.5" id="64A-e7-uou"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SXU-2j-IMq" secondAttribute="trailing" constant="139" id="7If-Lf-f0m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SXU-2j-IMq" secondAttribute="trailing" constant="32" id="7If-Lf-f0m"/>
                             <constraint firstItem="iRU-M2-Lyb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="9Dx-xR-SSK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iRU-M2-Lyb" secondAttribute="trailing" constant="137" id="dBi-NH-s7N"/>
                             <constraint firstItem="SXU-2j-IMq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="uT4-eQ-Oay"/>
-                            <constraint firstItem="SXU-2j-IMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="zyZ-Fp-eTD"/>
+                            <constraint firstItem="SXU-2j-IMq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="zyZ-Fp-eTD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -123,7 +123,7 @@
         <!--Results-->
         <scene sceneID="3pR-Or-ZZX">
             <objects>
-                <viewController title="Results" id="YB2-rS-5Ug" sceneMemberID="viewController">
+                <viewController title="Results" id="YB2-rS-5Ug" customClass="ResultsViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2kz-vr-v5d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +156,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uKy-Nh-Vup"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="gdP-s6-eq8" id="ldz-Uh-ofm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMl-Aw-Gb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
