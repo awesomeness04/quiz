@@ -24,13 +24,13 @@ class QuizViewController: UIViewController {
             Answer(text: "Toys R Us", isCorrect: false),
             Answer(text: "Target", isCorrect: true)
         ]),
-        Question(text: "I'm an NFL team that hates King George III, study your American history!", answers: [
+        Question(text: "I'm an NFL team that hates King George III!", answers: [
             Answer(text: "Los Angeles Rams", isCorrect: false),
             Answer(text: "Minnesota Vikings", isCorrect: false),
             Answer(text: "Baltimore Ravens", isCorrect: false),
             Answer(text: "New England Patriots", isCorrect: true)
         ]),
-        Question(text: "Sir Isaac Newton is a big fan this modern day company, it was 'the reason' why he studied physics (according to a story).", answers: [
+        Question(text: "Physicists are big fans of this modern day company.", answers: [
             Answer(text: "Yahoo", isCorrect: false),
             Answer(text: "Apple", isCorrect: true),
             Answer(text: "Samsung", isCorrect: false),
@@ -42,7 +42,7 @@ class QuizViewController: UIViewController {
             Answer(text: "Boston Red Sox", isCorrect: false),
             Answer(text: "Houston Astros", isCorrect: false)
         ]),
-        Question(text: "This NBA team might have you burnt at the stake if you're not a fan of it!", answers: [
+        Question(text: "This dazzling NBA team might just surprise you!", answers: [
             Answer(text: "Boston Celtics", isCorrect: false),
             Answer(text: "Oklahoma City Thunder", isCorrect: false),
             Answer(text: "Washington Wizards", isCorrect: true),
@@ -60,9 +60,9 @@ class QuizViewController: UIViewController {
             Answer(text: "Rugby", isCorrect: false),
             Answer(text: "Cricket", isCorrect: true)
         ]),
-        Question(text: "I'm a fast food restaurant which will have you treated like royalty, read my reviews on Yelp!", answers: [
-            Answer(text: "In-N-Out", isCorrect: false),
-            Answer(text: "Burger King", isCorrect: true),
+        Question(text: "I'm a fast food restaurant where people always go...", answers: [
+            Answer(text: "In-N-Out", isCorrect: true),
+            Answer(text: "Burger King", isCorrect: false),
             Answer(text: "McDonalds", isCorrect: false),
             Answer(text: "Wendy's", isCorrect: false)
         ]),
@@ -114,6 +114,11 @@ class QuizViewController: UIViewController {
             performSegue(withIdentifier: "Show Results", sender: self)
         }
         
+    }
+    
+    @IBAction func unwindToQuizViewController (segue:UIStoryboardSegue) {
+        quiz.reset()
+        show(question: quiz.currentQuestion)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
