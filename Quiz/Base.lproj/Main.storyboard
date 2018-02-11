@@ -154,16 +154,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your score is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L65-7U-2pc">
-                                <rect key="frame" x="50" y="30" width="280.5" height="54.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-s6-eq8">
+                                <rect key="frame" x="128" y="97" width="64" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Anton-Regular" family="Anton" pointSize="30"/>
+                                <color key="textColor" red="0.90313689720812185" green="0.15730492271775628" blue="0.19289109312540575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L65-7U-2pc">
+                                <rect key="frame" x="50" y="29" width="220.5" height="54.5"/>
                                 <fontDescription key="fontDescription" name="Anton-Regular" family="Anton" pointSize="37"/>
                                 <color key="textColor" red="0.90313689720812185" green="0.19685805970245676" blue="0.20068935084395811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6k-D5-roZ">
-                                <rect key="frame" x="93" y="248" width="137" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6k-D5-roZ">
+                                <rect key="frame" x="105.5" y="248" width="110" height="56"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="31"/>
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" red="0.90313689720812185" green="0.075900393548913245" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -172,29 +176,19 @@
                                     <segue destination="EWq-Hy-KKL" kind="unwind" unwindAction="unwindToQuizViewControllerWithSegue:" id="fgH-7X-BHe"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-7s-zla">
-                                <rect key="frame" x="128" y="92" width="64" height="44.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="T5x-xR-Izy">
-                                        <rect key="frame" x="0.0" y="0.0" width="64" height="44.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdP-s6-eq8">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="44.5"/>
-                                                <fontDescription key="fontDescription" name="Anton-Regular" family="Anton" pointSize="30"/>
-                                                <color key="textColor" red="0.90313689720812185" green="0.15730492271775628" blue="0.19289109312540575" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="gdP-s6-eq8" firstAttribute="leading" secondItem="T5x-xR-Izy" secondAttribute="leading" id="Zrv-1n-I5b"/>
-                                            <constraint firstAttribute="trailing" secondItem="gdP-s6-eq8" secondAttribute="trailing" id="pWT-LY-zSi"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0096537812081503027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gdP-s6-eq8" firstAttribute="top" secondItem="L65-7U-2pc" secondAttribute="bottom" constant="13.5" id="Gdp-iO-zPq"/>
+                            <constraint firstItem="P6k-D5-roZ" firstAttribute="top" secondItem="gdP-s6-eq8" secondAttribute="bottom" constant="106.5" id="Irc-r1-jv4"/>
+                            <constraint firstItem="P6k-D5-roZ" firstAttribute="top" secondItem="gdP-s6-eq8" secondAttribute="bottom" constant="106.5" id="Sco-NF-N8j"/>
+                            <constraint firstItem="uKy-Nh-Vup" firstAttribute="bottom" secondItem="P6k-D5-roZ" secondAttribute="bottom" constant="264" id="Ubz-m7-YIr"/>
+                            <constraint firstItem="P6k-D5-roZ" firstAttribute="centerX" secondItem="2kz-vr-v5d" secondAttribute="centerX" id="dzd-xf-1se"/>
+                            <constraint firstItem="gdP-s6-eq8" firstAttribute="top" secondItem="L65-7U-2pc" secondAttribute="bottom" constant="13.5" id="f3m-dZ-E3e"/>
+                            <constraint firstItem="L65-7U-2pc" firstAttribute="top" secondItem="uKy-Nh-Vup" secondAttribute="top" constant="9" id="ijW-JM-g4d"/>
+                            <constraint firstItem="gdP-s6-eq8" firstAttribute="centerX" secondItem="2kz-vr-v5d" secondAttribute="centerX" id="iro-No-hf0"/>
+                            <constraint firstItem="L65-7U-2pc" firstAttribute="centerX" secondItem="2kz-vr-v5d" secondAttribute="centerX" id="pPN-nM-mkb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uKy-Nh-Vup"/>
                     </view>
                     <connections>
